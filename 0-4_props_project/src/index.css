@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0, 0.506);
+  color: white;
+}
+
+.Parent{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+.card{
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  /* margin: 20px; */
+  border-radius: 30px;
+}

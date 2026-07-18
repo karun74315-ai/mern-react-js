@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    bxbox-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.506);
+    color: white;
+}
