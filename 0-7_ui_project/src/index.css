@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+#rightc::-webkit-scrollbar{
+    display: none;
+
+}
