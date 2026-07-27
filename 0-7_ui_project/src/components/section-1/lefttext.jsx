@@ -1,9 +1,13 @@
 import React from 'react'
-
+import 'remixicon/fonts/remixicon.css'
+import Hero from './herotext'
+import Arrow from './arrow'
 function Lefttext() {
   return (
-    <div className='h-full w-1/3 bg-blue-600 '>
-      teext
+    <div className='h-full w-1/3  flex flex-col justify-between '>
+      <Hero />
+      <Arrow />
+      
     </div>
   )
 }
