@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #682c2c;
+  color: white;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  
+
+}
+
+h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;    
+  transform: translate(-50%,-50%);  
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+}
+
+.navbar div{
+  display:flex;
+  gap: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+

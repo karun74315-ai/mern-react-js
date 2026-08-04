@@ -3,34 +3,26 @@ import axios from 'axios'
 import Page from './components/page'
 
 function App() {
-
   const [userdata, setuserdata] = useState([])
   const [index, setindex] = useState(1)
-
   const getdata = async ()=>{
     const response =  await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=20`)
     setuserdata(response.data)
     console.log(response.data); 
-    
   }
-  
   useEffect(()=>{
     getdata()
   },[index])
-
   let printuserdata = <h3 className='text-gray-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Loading...!!!</h3>
   if(userdata.length>0){
     printuserdata = userdata.map(function(elem ,idx){
       return <div key={idx} >
-                   
-
        <Page elem={elem} />
       </div>
     })
   }
   return (
     <div className = 'bg-black h-screen text-white p-5 overflow-auto'>
-      
        <div className = ' mt-5 flex flex-wrap gap-5'>
           {
             printuserdata
@@ -55,5 +47,4 @@ function App() {
     </div>
   )
 }
-
 export default App
