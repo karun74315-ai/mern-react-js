@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+h1{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%); 
+  text-decoration:underline;
+  font-weight:900;
+}
+
+
+h2{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%); 
+  text-decoration:underline;
+  font-weight:900;
+}
